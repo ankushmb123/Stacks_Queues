@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace StackQueues
 {
-    // Implenting Stack using LinkedList.
+    /// <summary>
+    /// Implenting Stack using LinkedList.
+    /// </summary>
     class StackUsingLinkedList
     {
 
@@ -14,8 +16,11 @@ namespace StackQueues
         public StackUsingLinkedList()
         {
             this.top = null;
-        }      
-        // Pushing data to the top of stack.      
+        }
+        /// <summary>
+        /// Pushing data to the top of stack.
+        /// </summary>
+        /// <param name="data"></param>
         public void Push(int value)
         {
             Node node = new Node(value);
@@ -26,8 +31,9 @@ namespace StackQueues
             this.top = node;
             Console.WriteLine("{0} pushed to stack ", value);
         }
-        // peek from the stack
-        
+        /// <summary>
+        /// peek from the stack
+        /// </summary>
         public void Peek()
         {
             //if top is null
@@ -40,13 +46,15 @@ namespace StackQueues
             // value is in the top of the stack
             Console.WriteLine("{0} is in the top of the stack ", this.top.data);
         }
-            //  Pop from the stack 
+        /// <summary>
+        ///  Pop from the stack 
+        /// </summary>
         public void Pop()
         {
             //if top is null
             if (this.top == null)
             {
-            // stack is empty 
+                // stack is empty 
                 Console.WriteLine("Stack is empty, Deletion is not possible");
                 return;
             }
@@ -54,9 +62,11 @@ namespace StackQueues
             Console.WriteLine("Value popped is {0} ", this.top.data);
             //next 
             this.top = this.top.next;
-        }       
-        // is empty        
-       public void IsEmpty()
+        }
+        /// <summary>
+        /// is empty
+        /// </summary>
+        public void IsEmpty()
         {
             while (this.top != null)
             {
@@ -64,8 +74,9 @@ namespace StackQueues
                 Pop();
             }
         }
-        // method to display all the elements of stack.
-        
+        /// <summary>
+        /// method to display all the elements of stack.
+        /// </summary>
         public void Display()
         {
             Node temp = this.top;

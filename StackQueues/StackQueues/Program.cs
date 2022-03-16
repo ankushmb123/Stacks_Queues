@@ -18,6 +18,12 @@ namespace StackQueues
             stackUsingLinkedList.Display();
             stackUsingLinkedList.IsEmpty();
             stackUsingLinkedList.Display();
+            QueueUsingLinkedList queueUsingLL = new QueueUsingLinkedList();
+            queueUsingLL.Enqueue(56);
+            queueUsingLL.Enqueue(30);
+            queueUsingLL.Enqueue(70);
+            Console.WriteLine("Queue Structure- ");
+            queueUsingLL.Display();
             Console.ReadLine();
         }
     }
