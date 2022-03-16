@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace StackQueues
 {
-    public class Node
-    {
-        /// <summary>
-        /// Node is an element of linkedlist that hold data and address of next node.
-        /// </summary>
+    class Node
+    {        
+        // Node is an element of linkedlist that hold data and address of next node.
         
         public int data;
         public Node next;
